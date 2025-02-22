@@ -9,3 +9,24 @@ const poppins = Poppins({
   weight: ["400", "600"],
   variable: "--font-heading",
 })
+
+export const metadata = {
+    title: "Expense Tracker",
+    description: "A modern expense tracking app",
+  }
+  
+  export default function RootLayout({
+    children,
+  }: {
+    children: React.ReactNode
+  }) {
+    return (
+      <html lang="en" suppressHydrationWarning>
+        <body className={`${inter.variable} ${poppins.variable} font-sans`}>
+          <ThemeProvider attribute="class" defaultTheme="system" enableSystem>
+            {children}
+          </ThemeProvider>
+        </body>
+      </html>
+    )
+  }
