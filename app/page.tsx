@@ -13,7 +13,7 @@ export default function OnboardingPage() {
 
   const onboardingSteps = [
     {
-      title: "Welcome to ExpenseTracker",
+      title: "Welcome to Spendora",
       description: "Track your expenses with ease and gain financial insights.",
     },
     {
