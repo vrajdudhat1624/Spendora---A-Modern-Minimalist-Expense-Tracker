@@ -1,11 +1,19 @@
-import { Moon, Sun, Laptop, type LightbulbIcon as LucideProps, ChromeIcon as Google } from "lucide-react";
-import { SVGProps } from "react";
+import {
+  Sun,
+  Moon,
+  type LightbulbIcon as LucideProps,
+  Wallet,
+  BarChart2,
+  Layout,
+  Shield,
+  Brain,
+  Linkedin,
+  Twitter,
+  Github,
+} from "lucide-react"
 
 export const Icons = {
-  sun: Sun,
-  moon: Moon,
-  laptop: Laptop,
-  logo: (props: SVGProps<SVGSVGElement>) => (
+  logo: (props: LucideProps) => (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
@@ -21,5 +29,15 @@ export const Icons = {
       <path d="M12 16l-4-4" />
     </svg>
   ),
-  google: Google,
-};
+  sun: Sun,
+  moon: Moon,
+  categories: Wallet,
+  insights: BarChart2,
+  dashboard: Layout,
+  privacy: Shield,
+  ai: Brain,
+  linkedin: Linkedin,
+  twitter: Twitter,
+  github: Github,
+}
+
