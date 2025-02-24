@@ -1,7 +1,7 @@
 import {
   Sun,
   Moon,
-  type LightbulbIcon as LucideProps,
+  LightbulbIcon, // No need to alias this as LucideProps
   Wallet,
   BarChart2,
   Layout,
@@ -10,7 +10,9 @@ import {
   Linkedin,
   Twitter,
   Github,
-} from "lucide-react"
+  type LucideProps // This is the correct way to import LucideProps
+} from "lucide-react";
+
 
 export const Icons = {
   logo: (props: LucideProps) => (
